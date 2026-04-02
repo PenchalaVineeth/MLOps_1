@@ -6,7 +6,7 @@ from huggingface_hub import hf_hub_download
 @st.cache_resource
 def load_model():
     model_path = hf_hub_download(
-        repo_id='vineeth32/Bank-Customer-Churn-1',
+        repo_id='vineeth32/churn-model-1',
         filename='best_churn_model_1.joblib'
     )
     model = joblib.load(model_path)
